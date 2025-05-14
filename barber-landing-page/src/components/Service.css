@@ -1,0 +1,74 @@
+/* src/components/Services.css */
+.services {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #fff;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+  }
+  .section-underline {
+    margin-top: 10px;
+    width: 6rem;        /* w-24 = 96px */
+    height: 0.25rem;    /* h-1 = 4px */
+    background-color: #f7b258; /* Replace this with your actual 'secondary' color */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services p {
+    /* max-width: 600px;
+    margin: 1rem auto 2rem; */
+    margin-top: 1.5rem; /* mt-6 = 24px = 1.5rem */
+    font-size: 1.155rem; /* text-lg = 18px */
+    max-width: 42rem; /* max-w-2xl = 672px */
+    margin-left: auto;
+    margin-right: auto;
+    color: #4B5563; /* text-gray-600 = gray-600 in Tailwind */
+  
+  }
+  
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr); /* Default for mobile */
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow
+    : 0 5px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    text-align: left;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .card p {
+    margin: 0.5rem 0 1rem;
+    color: #444;
+  }
+  
+  .price {
+    color: #d4af37;
+    font-weight: bold;
+  }
+  
+  
+@media (min-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row on tablet and up */
+    }
+  }
